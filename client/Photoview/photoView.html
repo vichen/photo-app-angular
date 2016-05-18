@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <h1>Photo View</h1>
+  </div>
+  <div class="row">
+  
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li ng-repeat="image in images" ng-class="{active: selected===image}" class="list-group-item" ng-click="selectImage(image)">{{image.title}}</li>
+      </ul>
+    </div>
+
+    <div class="col-md-8" ng-if="selected">
+      <div class="row">
+        <img class="img-responsive" src="{{selected.src}}">
+        <h2>Artist: {{selected.artist}}</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Rating: {{selected.rating}}</label> 
+            <select ng-model="selected.rating" class="form-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

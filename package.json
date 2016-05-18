@@ -1,0 +1,23 @@
+{
+  "name": "photo-app-angular",
+  "version": "1.0.0",
+  "description": "How to use:",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "dev": "browserify app.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "browserify": "^13.0.1",
+    "express": "^4.13.4",
+    "jquery": "^2.2.3",
+    "morgan": "^1.7.0"
+  }
+}
