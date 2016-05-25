@@ -7,6 +7,10 @@ angular.module('app')
       templateUrl: './Photoview/photoView.html',
       controller: 'PhotoViewController'
     })
+    .when('/newimage', {
+      templateUrl: './NewImage/newImagePage.html',
+      controller: 'NewImageController'
+    })
     .otherwise({
       redirectTo: '/'
     })
