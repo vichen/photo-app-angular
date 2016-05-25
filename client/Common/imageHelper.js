@@ -4,7 +4,7 @@ angular.module('app')
       this.addImage = function(url, title, artist) {
         return $http({
           method: 'POST',
-          url: '/api/addImage',
+          url: '/api/images',
           data: {url: url, title: title, artist: artist}
         })
           .then(function(res) {
@@ -15,7 +15,7 @@ angular.module('app')
       this.getImages = function() {
         return $http({
           method: 'GET',
-          url: '/api/getImages'
+          url: '/api/images'
         })
           .then(function(res) {
             return res.data;

@@ -18,6 +18,8 @@
     "browserify": "^13.0.1",
     "express": "^4.13.4",
     "jquery": "^2.2.3",
+    "mongodb": "^2.1.19",
+    "mongoose": "^4.4.19",
     "morgan": "^1.7.0"
   }
 }

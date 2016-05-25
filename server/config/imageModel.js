@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var imageSchema = new mongoose.Schema({
+var imageSchema = mongoose.Schema({
   url: {type: String, required: true, unique: true},
   title: {type: String, required: true},
   artist: {type: String, required: true},
